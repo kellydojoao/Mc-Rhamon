@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Roxa com Imagens</title>
+    <title>Página Roxa com Imagens em Linha</title>
     <style>
         body {
             background-color: #4B0082; /* Roxo escuro */
@@ -11,11 +11,12 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 800px; /* Largura máxima do container */
+            margin: 0 auto; /* Centraliza o container */
             padding: 20px;
             background-color: #800080; /* Roxo médio */
             border-radius: 10px;
@@ -27,12 +28,19 @@
             margin-bottom: 20px;
         }
 
+        .image-row {
+            display: flex; /* Layout flexível para colocar as imagens lado a lado */
+            justify-content: space-between; /* Espaço entre as imagens */
+            gap: 10px; /* Espaçamento entre as imagens */
+        }
+
         .image-container {
-            margin: 20px 0;
+            flex: 1; /* Faz com que as imagens ocupem o espaço disponível igualmente */
+            max-width: 30%; /* Largura máxima de cada imagem */
         }
 
         .image-container img {
-            max-width: 100%;
+            width: 100%; /* Faz a imagem ocupar todo o espaço do container */
             height: auto;
             border-radius: 10px;
             border: 2px solid #FFFFFF;
@@ -55,23 +63,18 @@
 <body>
 
     <div class="container">
-        <h1>MC RHAMON</h1>
+        <h1>Página Roxa com Imagens em Linha</h1>
 
-        <div class="image-container">
-            <div class="image-placeholder">
-                <img src="https://media.fstatic.com/Z9STcotRtR3bdTWdNNT3BCCN-8c=/195x289/smart/filters:format(webp)/media/artists/avatar/2022/07/mc-rhamon_a677609.jpg" alt="MC Rhamon 1">
+        <!-- Linha de imagens -->
+        <div class="image-row">
+            <div class="image-container">
+                <img src="caminho/da/imagem1.jpg" alt="Imagem 1">
             </div>
-        </div>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                <img src="mc_rhamon1.jpg" alt="MC Rhamon 2">
+            <div class="image-container">
+                <img src="caminho/da/imagem2.jpg" alt="Imagem 2">
             </div>
-        </div>
-
-        <div class="image-container">
-            <div class="image-placeholder">
-                <img src="mc_rhamon1.jpg" alt="MC Rhamon 3">
+            <div class="image-container">
+                <img src="caminho/da/imagem3.jpg" alt="Imagem 3">
             </div>
         </div>
     </div>
