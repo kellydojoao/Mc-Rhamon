@@ -1,0 +1,55 @@
+body {
+    background-color: #2b1c36; /* Roxo escuro */
+    color: #FFFFFF; /* Texto branco */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do container aumentada */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #800080; /* Roxo médio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex; /* Layout flexível para colocar as imagens lado a lado */
+    justify-content: space-between; /* Espaço entre as imagens */
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.image-container {
+    flex: 1; /* Faz com que as imagens ocupem o espaço disponível igualmente */
+    max-width: 30%; /* Largura máxima de cada imagem */
+    text-align: center;
+}
+
+.image-frame {
+    width: 300px; /* Largura da moldura retangular vertical aumentada */
+    height: 400px; /* Altura da moldura retangular vertical aumentada */
+    border: 3px solid #FFFFFF; /* Borda branca */
+    border-radius: 10px; /* Borda levemente arredondada */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a moldura */
+    margin: 0 auto; /* Centraliza a moldura */
+}
+
+.image-frame img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da moldura */
+    height: 100%; /* Faz a imagem ocupar toda a altura da moldura */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.image-caption {
+    margin-top: 10px; /* Espaço abaixo da imagem para escrever */
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
