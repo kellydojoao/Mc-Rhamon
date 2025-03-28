@@ -61,7 +61,9 @@ h1 {
    height: 5vh;
 }
 
-.imagem{
-    width: 50px; 
+
+
+.imagem img {
     height: 50px;
+    width: 50px;
 }
