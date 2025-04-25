@@ -34,8 +34,8 @@ h1 {
 }
 
 .image-frame {
-    width: 300px; /* Largura da moldura retangular vertical aumentada */
-    height: 400px; /* Altura da moldura retangular vertical aumentada */
+    width: 200px; /* Largura da moldura retangular vertical aumentada */
+    height: 300px; /* Altura da moldura retangular vertical aumentada */
     border: 3px solid #FFFFFF; /* Borda branca */
     border-radius: 10px; /* Borda levemente arredondada */
     overflow: hidden; /* Garante que a imagem não ultrapasse a moldura */
