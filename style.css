@@ -11,7 +11,7 @@ body {
     max-width: 1200px; /* Largura máxima do container aumentada */
     margin: 0 auto; /* Centraliza o container */
     padding: 20px;
-    background-color: #8000080; 
+    background-color: blueviolet; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
